@@ -15,6 +15,11 @@ else
     $CPPFLAGS << ' ' << '-m64 -std=c++11'
     $CXXFLAGS = CONFIG['CFLAGS'].gsub(/-std=c99/, '')
     $CXXFLAGS << ' ' << '-m64 -std=c++11'
+  elsif(RbConfig::CONFIG['host_os'] =~ /aix/)
+    # We need to explicitly force the compiler to enable extension for AIX.
+    $CFLAGS << ' ' << '-D_ALL_SOURCE=1'
+    $CPPFLAGS << ' ' << '-D_ALL_SOURCE=1'
+    $CXXFLAGS << ' ' << '-D_ALL_SOURCE=1'
   end
 end
 
