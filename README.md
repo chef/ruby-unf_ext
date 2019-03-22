@@ -1,3 +1,8 @@
+## Note
+
+This is a fork of the main project, to fix AIX compilation flags.  It sets the versiont to 0.0.7.6, which may not exist on rubygems. This is consumed by the InSpec project, see https://github.com/inspec/inspec/issues/2873 and https://github.com/inspec/inspec/issues/3901
+
+
 ruby-unf_ext
 ============
 
