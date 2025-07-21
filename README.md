@@ -1,3 +1,10 @@
+## Archived 3rd-Party Fork
+
+This repository is an archived copy of a 3rd-party open-source project that Progress Chef contributed to.
+
+It was archived as part of the [Repository Standardization Initiative](https://github.com/chef-boneyard/oss-repo-standardization-2025).
+
+---
 ## Note
 
 This is a fork of the main project, to fix AIX compilation flags.  It sets the versiont to 0.0.7.6, which may not exist on rubygems. This is consumed by the InSpec project, see https://github.com/inspec/inspec/issues/2873 and https://github.com/inspec/inspec/issues/3901
